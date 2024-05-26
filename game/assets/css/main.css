@@ -1,0 +1,122 @@
+/*
+This is the main CSS code. Any canges will affect the entrie game!
+CSS code by ShyFox
+Version: 0.0
+*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body Sizes */
+
+html, body{
+    height: 100%;
+    width: 100%;
+    touch-action: pan-x pan-y;
+}
+
+/* Font Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Color vars */
+
+:root{
+    --primary: #99F7AB;
+    --secondary: #ABDF75;
+    --light-primary: #afcdb5;
+    --primary-bgr: #C5D6D8;
+    --highlights: #60695C;
+}
+
+
+/* Vertical spacers */
+.vs5{
+    height: 5px;
+}
+.vs-10{
+ height: 10px;
+}
+
+.vs-15{
+    height: 15px;
+}
+
+.vs20{
+    height: 20;
+}
+
+/* Default colors */
+
+body{
+    background-color: var(--primary-bgr);
+    color: #000;
+}
+
+.clickable, a{
+    color: var(--light-primary);
+}
+
+.primary{
+    color:var(--primary);
+}
+
+.secondary{
+    color: var(--secondary);
+}
+
+.light-primary{
+    color: var(--light-primary);
+}
+
+.highlight{
+
+    color: var(--highlights)
+}
+
+.primary-b{
+    background-color:var(--primary);
+}
+
+.secondary-b{
+    background-color: var(--secondary);
+}
+
+.light-primary-b{
+    background-color: var(--light-primary);
+}
+
+.highlight-b{
+
+    background-color: var(--highlights)
+}
+
+/* Defaults */
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Default Styles */
+
+input{
+    font-size: 17px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    width: 100%;
+}
+
+button{
+    border-radius: 200px;
+    padding-inline: 10px;
+    padding-block: 2px;
+}
+
+
+.hidden{
+    display: none;
+}

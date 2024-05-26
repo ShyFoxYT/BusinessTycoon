@@ -1,0 +1,58 @@
+/*
+The Stylesheet from index.html located at businessgame.de/
+By ShyFox
+Version 0.0
+
+Subject to be removed and added to "index.html"
+*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+}
+
+.login-container {
+    background: #fff;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lgn {
+    width: 80%;
+}
+
+.notice {
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    padding: 10px;
+    width: 80%;
+    height: 60%;
+}
+
+.fs-notice {
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0000005c;
+}

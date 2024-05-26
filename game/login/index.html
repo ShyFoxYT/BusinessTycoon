@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Business Tycoon! • Welcome</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+
+    <div class="fs-notice" id="desnoti">
+
+        <div class="notice">
+            <h2>Welcome!</h2>
+            <p>
+            Thank you that you want to play my game. 
+            currently its in the development, there could be alot of bugs!
+            Also, this game was designed to be played on a mobile as a WebApp. 
+            Desktop may look wierd!
+            </p>
+
+            <button onclick="clsNot()" class="primary-b">I understand</button>
+            <script>
+                function clsNot(){
+                    document.getElementById('desnoti').classList.add('hidden');
+                    document.getElementById('desnoti').classList.remove('fs-notice')
+                }
+            </script>
+        </div>
+        
+    </div>
+
+    <div class="login-container">
+
+        <h2 class="gametitle">Business Tycoon!</h2>
+        <h4 class="subtitle">Login to have a backup</h4>
+        <span class="clickable" onclick="lrnMre()">Learn more</span>
+
+        <div class="vs-10"></div>
+
+        <form action="/api/login.php" method="POST">
+            <input type="text" placeholder="Username" name="usrn" id="usrn">
+            <div class="vs5"></div>
+            <input type="password" name="pwd" id="pwd" placeholder="Password">
+            <div class="vs5"></div>
+            <button type="submit" class="lgn primary-b">Login</button>
+            <div class="vs5"></div>
+            <p onclick="shwReg()">Don't have an account?</p>
+            <p onclick="lgnAsGuest()">Use as an Guest</p>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
