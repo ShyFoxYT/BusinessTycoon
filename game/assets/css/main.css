@@ -16,6 +16,8 @@ html, body{
     height: 100%;
     width: 100%;
     touch-action: pan-x pan-y;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--primary-bgr) 2%, var(--primary-bgr) 9%, var(--primary-bgr) 100%); 
+
 }
 
 /* Font Imports */
@@ -52,7 +54,7 @@ html, body{
 /* Default colors */
 
 body{
-    background-color: var(--primary-bgr);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--primary-bgr) 2%, var(--primary-bgr) 3%, var(--primary-bgr) 100%);
     color: #000;
 }
 
@@ -120,3 +122,40 @@ button{
 .hidden{
     display: none;
 }
+
+.head{
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+    box-shadow: #00000059 0px 4px 8px 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+    box-shadow: #00000059 0px 4px -8px 1px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+.head .ti, .navbar .ti{
+    font-size: 1.8rem;
+}
+
+.main{
+ z-index: 0;
+}
+
