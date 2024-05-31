@@ -1,9 +1,6 @@
 <?php
 session_start();
-$host = 'localhost';
-$db = 'bnt';
-$user = 'savegameapp';
-$pass = 'JeQkaF4!amE3';
+
 
 $conn = new mysqli($host, $user, $pass, $db);
 
